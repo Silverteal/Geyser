@@ -17,11 +17,11 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config user.name 'Shanwer'
-        git config user.email 'Shanwer@qq.com'
+        git config user.name 'actions-user'
+        git config user.email 'actions@github.com'
 
     - name: Add upstream remote
-      run: git remote add upstream https://github.com/GeyserMC/Geyser.git
+      run: git remote add upstream https://github.com/Shanwer/Geyser.git
 
     - name: Fetch upstream changes
       run: git fetch upstream
