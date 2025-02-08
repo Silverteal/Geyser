@@ -22,10 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: runsascoded/update-submodules@v1
         with:
-          submodules: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Get Release Info
         id: release-info
